@@ -3,3 +3,9 @@ node_modules
 
 # Requirements
 req.md
+
+# Environment
+.env
+
+# Build
+build
