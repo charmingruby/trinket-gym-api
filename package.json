@@ -1,0 +1,22 @@
+{
+  "name": "trinket-gym-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/charmingruby/trinket-gym-api.git",
+  "author": "charmingruby <mrrubycanal3105@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "fastify": "^4.17.0"
+  }
+}
