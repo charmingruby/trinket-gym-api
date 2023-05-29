@@ -10,3 +10,6 @@ req.md
 
 # Build
 build
+
+# Tests
+coverage
