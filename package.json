@@ -11,7 +11,7 @@
     "build": "tsup src --out-dir build",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run--coverage"
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@prisma/client": "4.14.1",
