@@ -14,7 +14,7 @@ describe('Register Use Case', () => {
     sut = new AuthenticateUserUseCase(usersRepository)
   })
 
-  it('should be able to register', async () => {
+  it('should be able to authenticate', async () => {
     await usersRepository.create({
       name: 'John Doe',
       email: 'johndoe@example.com',

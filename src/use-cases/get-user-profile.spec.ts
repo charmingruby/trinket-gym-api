@@ -2,16 +2,16 @@ import { describe, it, expect, beforeEach } from 'vitest'
 import { InMemoryUsersRepository } from '@/repositories/in-memory/in-memory-users-repository'
 import { hash } from 'bcryptjs'
 import { UsersRepository } from '@/repositories/users-repository'
-import { GetUserProfileUserCase } from './get-user-profile'
+import { GetUserProfileUseCase } from './get-user-profile'
 import { ResourceNotFoundError } from './errors/resource-not-found-error'
 
 let usersRepository: UsersRepository
-let sut: GetUserProfileUserCase
+let sut: GetUserProfileUseCase
 
 describe('Get User Profile Use Case', () => {
   beforeEach(() => {
     usersRepository = new InMemoryUsersRepository()
-    sut = new GetUserProfileUserCase(usersRepository)
+    sut = new GetUserProfileUseCase(usersRepository)
   })
 
   it('should be able to register', async () => {
